@@ -1,0 +1,48 @@
+.App {
+  background: #f1f1f1;
+  max-width: 1080px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.pgrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: .1rem;
+  gap: .1rem;
+}
+
+.gridItem {
+  position: relative;
+  background: #c7c7c7;
+  aspect-ratio: 4 / 5;
+  /* fix full height for image */
+  font-size: 0;
+  line-height: 0;
+}
+
+.gridItem img {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.buttonAdd {
+  all: unset;
+  width: 100%;
+  padding: .3rem;
+  text-align: center;
+}
+
+.link {
+  color: #b318f0;
+}
+
+.inputHidden {
+  visibility: hidden;
+  display: none;
+}
